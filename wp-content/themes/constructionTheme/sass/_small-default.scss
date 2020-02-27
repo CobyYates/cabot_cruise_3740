@@ -1,0 +1,506 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+	p {
+		color: black;
+	}
+}
+
+.article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.news {
+	color: black;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 85px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+/* ------------- BODY ------------- */
+
+body {
+  font-family: $defaultFont;
+  font-size: 16px;
+  font-weight: $normalWeight;
+}
+
+/* ------------- HEADER ------------- */
+header {
+  h3 {
+    display: none;
+  }
+  background-color: rgb(107, 108, 110);
+}
+
+iframe {
+	height: 500px
+}
+
+/*  ------------- CRUISE PAGE -------------  */
+
+.cruiseContainers {
+  .cruisePhoto {
+    width: 100%;
+  }
+  button,
+  h2,
+  p,
+  img {
+    margin-bottom: 10px;
+  }
+  img {
+    margin-top: 20px;
+  }
+  button {
+    width: 100%;
+    border-radius: 22px;
+    height: 44px;
+    background-color: $primaryColor;
+    color: white;
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: large;
+  }
+}
+
+.gallery div img{
+	width: 100%;
+}
+
+.galleryFlex {
+	display: flex;
+	flex-wrap: wrap;
+	figure {
+		flex-basis: 50%;
+		padding: .5rem;
+		color: black;
+	}
+	img{width: 100%}
+}
+
+.location {
+	color: black;
+	text-align: center;
+}
+
+
+
+.first {
+	grid-area: one;
+	text-align: center;
+}
+
+.second {
+	grid-area: two;
+	text-align: center;
+}
+
+.third {
+	grid-area: three;
+	text-align: center;
+}
+
+
+.testimonial {
+	color: black;
+	max-width: 1200px;
+	margin: 20px 10px 0 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto;
+	grid-column-gap: 20px;
+	grid-template-areas: 
+		"one"
+		"two"
+		"three";
+}
+
+.about {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"one"
+		"two" 
+		"three";
+	.section1, .section2, .section3 {
+		margin-top: 10px;
+	}
+	.section1 {
+		grid-area: one
+	}
+	.section1 {
+		grid-area: two
+	}
+	.section1 {
+		grid-area: three
+	}
+	color: black;
+	margin: 20px 2%;
+}
+
+/*  ------------- AGENTS -------------  */
+
+.agentDetails {
+  img {
+    padding: 20px 0;
+  }
+
+  h3,
+  p {
+    font-size: 1.25rem;
+    padding: 0 4px;
+  }
+
+  h3 {
+    padding-bottom: 5px;
+  }
+
+  p {
+    padding-bottom: 30px;
+  }
+}
+
+.comments {
+  h3,
+  p {
+    font-size: 1.25rem;
+    padding: 0 4px;
+  }
+
+  h3 {
+    padding-bottom: 10px;
+  }
+
+  section {
+    padding-bottom: 20px;
+  }
+}
+
+.form {
+  padding-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  label {
+    padding-left: 5px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input[type="text"],
+      [type="number"],
+      [type="tel"],
+      [type="email"],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 22px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: $primaryColor;
+    }
+  }
+}
+
+/*  ------------- MAIN -------------  */
+
+main {
+  h1 {
+    font-size: 1.75rem;
+    margin: 1rem 0 0 $gutter;
+    color: $primaryColor;
+  }
+}
+
+a.coolTrick {
+  display: block;
+  text-align: center;
+  width: auto;
+  margin: 2rem 0;
+  position: relative;
+  //   padding-bottom: 20px;
+
+  &:hover .coverColor {
+    opacity: 0.1;
+  }
+}
+
+.txt {
+  position: absolute;
+  top: 0px;
+  background-color: $secondaryColor;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  top: 0;
+}
+
+.txtLow {
+  position: absolute;
+  bottom: 0;
+  background-color: $secondaryColor;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.coverColor {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+  background-color: $secondaryColor;
+  opacity: 0.75;
+}
+
+//   --------------------GALLERY CSS GRID-------------------
+
+.gallery {
+  display: grid;
+  img {
+    width: 100%;
+  }
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+
+/*  ------------- SLICK SLIDER -------------  */
+.myslider div {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+/*  ------------- FOOTER -------------  */
+footer {
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  div {
+    padding: 20px 10px 0 10px;
+  }
+
+  section {
+    padding-bottom: 10px;
+  }
+  .contact a {
+    color: $fontColor;
+  }
+  .phone a {
+    //   text-decoration: none;
+    color: $fontColor;
+  }
+  .news {
+    padding: 0;
+    h3,
+    p {
+      padding: 10px;
+    }
+  }
+  h3 {
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    color: $fontColor;
+  }
+  p {
+    color: $fontColor;
+  }
+  .social {
+    display: flex;
+    justify-content: space-around;
+    padding: 10 20%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    .fab {
+      color: white;
+      font-size: 3.5rem;
+      padding: 0 5px;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .developer {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    a {
+      color: $fontColor;
+    }
+  }
+}
+
+.navi {
+	display: flex;
+	flex-direction: row;
+}
+
+#hamburgerBtn {
+	height: 44px;
+}
+
+.search-container {
+	z-index: 10;
+    width: 80%;
+    display: flex;
+	flex-direction: row-reverse;
+	align-content: flex-end;
+	align-items: center;
+	justify-content: baseline;
+    input {
+      height: 44px;
+      width: 80%;
+//      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+	form {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+    button {
+      height: 44px;
+	  width: 44px;
+      border-radius: 5px;
+	  margin-left: auto;
+    }
+	.search {
+		margin: 0;
+	}
+  }
+
+// NAVIGATION
+nav {
+	align-self: center;
+	background-color: $menuColor;
+
+	button {
+		font-size: 1.5rem;
+		color: white;
+		background-color: rgba(0,0,0,0.2);
+		border: solid 1px rgba(168, 168, 168, 0.3);
+		width: 4rem;
+		border-radius: 5px;
+	}
+
+	#primaryNav li a:hover {
+		background-color: rgba(0,0,0,.5);
+	}
+
+	ul li a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+		padding: .6rem 2%;
+		border-bottom: solid 1px rgba(133, 133, 133, 0.473); 
+	}
+
+	ul {
+		overflow: hidden;
+		transition: max-height 0.5s;
+		-webkit-transition: max-height 0.5s;
+		-moz-transition: max-height 0.5s;
+	}
+
+	ul li.active a {background-color: $primaryColor;}
+	ul li ul li a {padding-left: 8%;}
+	
+	/* ------------------------------------------------------------------------- */
+	
+	#primaryNav li.parent > a:after {
+		font-size: .75rem;
+		content: "\25BC";
+		color: rgba(255,255,255,.5);
+		float: right;
+		}
+
+		#primaryNav li.parent > a:hover {
+			background: rgb(0, 0, 0);
+		}
+
+		#primaryNav li ul {
+			display: none;
+			background: $menuColor;
+			padding: 0;
+		}
+
+		#primaryNav li:hover ul {display: block;}
+	/* ------------------------------------------------------------------------- */
+
+	ul {height: 0;}
+	ul.open {height: 100%; width: 100%;}
+
+} // end nav
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

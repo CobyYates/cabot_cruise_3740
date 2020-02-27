@@ -1,0 +1,117 @@
+.news-content {
+	padding: .5rem $gutter 0 $gutter;
+	background-color: #999;
+	margin-top: 10px;
+	border-radius: 5px;
+	
+	.date-post {
+		color: white;
+//		background-color: orange;
+		float: left;
+		
+		h2 {
+			color: white;
+		}
+		p {
+			color: white;
+		}
+	}
+	
+	.post-content-text {
+		margin-left: 4rem;
+		padding-bottom: 30px;
+		
+		h3.news-title {
+			font-size: 1.4rem;
+		}
+		
+		.news-content-excerpt {
+			color: white;
+		}
+		
+		a.news-more-link {
+			background-color: #555;
+			text-decoration: none;
+			color: white;
+			background-color: $primaryColor;
+			padding: 10px;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+		
+		a:hover {
+				background-color: #777;
+			}
+		.news-short-content {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+div.wpcf7-form {
+	margin: 0 2%;
+	
+}
+.wpcf7-submit {
+		text-decoration: none;
+		color: white;
+		background-color: $primaryColor;
+		padding: 10px 20px;
+		border-radius: 5px;
+		margin-top: 20px;
+	}
+.your-name, .your-email, .tel-393, .your-subject, .qpcf7-display-none, .your-message {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	input, textarea{
+		font-size: 1rem;
+		color: $primaryColor;
+		padding: .65rem .5rem;
+	}		
+	}
+
+.wpcf7-not-valid-tip {
+	font-size: .9rem;
+	color: red;
+}
+
+
+.newsImage {
+			width: 100%;
+			max-width: 400px;
+			max-height: 533px;
+			text-align: center;
+			}
+
+div.news_pagination {
+	text-align: center;
+	margin-top: 20px;
+	.page-numbers {
+		background-color: $primaryColor;
+		padding: 5px;
+		text-decoration: none;
+		
+		border-radius: 3px;
+	}
+	
+	a {color: white;}
+	
+	a:hover {background-color: #777;}
+	
+	.current {background-color: #777;}
+}
+
+
+
+
+
+
+
+
+
+
+
+

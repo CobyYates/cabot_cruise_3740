@@ -1,0 +1,305 @@
+/* ------------- MAIN ------------- */
+
+body {
+	margin: 0 auto;
+	clear: both;
+}
+
+.coolTrick{
+	.txt {
+	bottom: 85%;
+}
+}
+
+.testimonial {
+	grid-template-rows: auto;
+	grid-template-columns: 50% 23% 23%;
+	margin-left: 0;
+	
+	grid-template-areas: 
+		"one two three";
+}
+
+.about {
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas:
+		"one div two div2 three";
+	.section1 {grid-area: one;}
+	.section1 {grid-area: two;}
+	.section1 {grid-area: three;}
+	.divider {grid-area: div;}
+	.divider2 {grid-area: div2; display: inline}
+}
+
+main {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.galleryFlex {
+	figure{flex-basis: 25%}
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"one two three four";
+	margin-bottom: 100px;
+  }
+
+  .icon {
+	height: 170px;
+	width: 170px;
+	position: absolute;
+	left: 45%;
+	top: 50%;
+	margin-top: -45%;
+}
+
+.txt {
+	position: absolute;
+	bottom: 50px;
+}
+
+.footerContainer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 30% auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+	  "one two three"
+	  "four four four"
+    "five five five";
+
+    .contact {
+      grid-area: one;
+    }
+    .news {
+      grid-area: two;
+      padding-right: 10px;
+    }
+    .why {
+      grid-area: three;
+    }
+    .social {
+      grid-area: four;
+    }
+    .developer {
+      grid-area: five;
+    }
+}
+
+/*  ------------- NAV -------------  */
+  /* Giving a background-color to the nav container. */
+.menu-main-menu-container {
+	height: 44px;
+}
+
+  nav {
+    margin: 0;
+    padding: 0;
+    background-color: #264670; }
+    nav #hamburgerBtn {
+//      display: none; 
+}
+    .menu-main-menu {
+      height: 44px;
+      display: inline-block; }
+
+  /* Since we'll have the "ul li" "float:left"
+   * we need to add a clear after the container. */
+  nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+  /* Removing padding, margin and "list-style" from the "ul",
+   * and adding "position:reltive" */
+  nav ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative; }
+
+  /* Positioning the navigation items inline */
+  nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #264670; }
+
+  /* Styling the links */
+  nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none; }
+
+  nav ul li ul li:hover {
+    background: #000000; }
+
+  /* Background color change on Hover */
+  nav a:hover {
+    background-color: #000000; }
+
+  /* Hide Dropdowns by Default
+   * and giving it a position of absolute */
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px; }
+
+  /* Display Dropdowns on Hover */
+  nav ul li:hover > ul {
+    display: inherit;
+    z-index: 10; }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative; }
+
+  .active {
+    background-color: #212121; }
+
+  .parent {
+    background-color: #212121; }
+
+
+/*  ------------- NAV -------------  */
+//nav {
+//	ul {
+//		border-left: 1px solid rgba(0,0,0,0.3);
+//		height: 150px;
+//		background: rgba(0, 0, 0, 0)
+//	}
+//	ul li {
+//		width: auto;
+//		position: relative;
+//	}// end li
+//	ul li:last-child {border-right: 1px solid rgba(0,0,0,0.3);}
+//	ul li a {
+//		padding: .5rem 1rem;
+//	} // and a
+//
+//	ul li ul {
+//		position: absolute;
+//		display: inline-block;
+//		left: 0;
+//		top: 100%;
+//		// padding: 10px 20px;
+//		z-index: 999;
+//		// &:hover {display: block;}
+//	}
+//
+//	.dropdown {
+//	}
+//} // end nav
+
+
+
+///* Giving a background-color to the nav container. */
+//nav {
+//  margin: 0;
+//  padding: 0;
+//  background-color: $primaryColor;
+//	#hamburgerBtn {
+//		display: none;
+//	}
+//	
+//	.menu-main-menu{
+//		height: 44px;
+//		display: inline-block;
+//	}	
+//}
+//
+///* Since we'll have the "ul li" "float:left"
+// * we need to add a clear after the container. */
+//
+//nav:after {
+//  content: "";
+//  display: table;
+//  clear: both;
+//}
+//
+///* Removing padding, margin and "list-style" from the "ul",
+// * and adding "position:reltive" */
+//nav ul {
+//  float: left;
+//  padding: 0;
+//  margin: 0;
+//  list-style: none;
+//  position: relative;
+//}
+//
+///* Positioning the navigation items inline */
+//nav ul li {
+//  margin: 0px;
+//  display: inline-block;
+//  float: left;
+//  background-color: $primaryColor;
+//}
+//
+///* Styling the links */
+//nav a {
+//  display: block;
+//  padding: 14px 20px;
+//  color: #fff;
+//  font-size: 17px;
+//  text-decoration: none;
+//}
+//
+//nav ul li ul li:hover {
+//  background: #000000;
+//}
+//
+///* Background color change on Hover */
+//nav a:hover {
+//  background-color: #000000;
+//}
+//
+///* Hide Dropdowns by Default
+// * and giving it a position of absolute */
+//nav ul ul {
+//  display: none;
+//  position: absolute;
+//  top: 60px;
+//}
+//
+///* Display Dropdowns on Hover */
+//nav ul li:hover > ul {
+//  display: inherit;
+//  z-index: 10;
+//}
+//
+///* Fisrt Tier Dropdown */
+//nav ul ul li {
+//  width: 170px;
+//  float: none;
+//  display: list-item;
+//  position: relative;
+//}
+//
+//.active {
+//  background-color: #212121;
+//}
+//
+//.parent {
+//  background-color: #212121;
+//}
+//
+.wrapper {
+	max-width: 75rem;
+	margin: 0 auto;
+}
+

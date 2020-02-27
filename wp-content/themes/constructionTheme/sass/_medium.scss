@@ -1,0 +1,282 @@
+/* ------------- NAVIGATION ------------- */
+
+.hamburgerOpen,
+.hamburgerClose {
+  display: none;
+}
+
+header {
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    h3 {
+      display: inline;
+    }
+  }
+}
+
+.menu-main-menu-container {
+	width: 75%;
+	ul {
+		margin-left: 0;
+		border: none;
+	}
+}
+
+.search-container {
+	height: 44px;
+    width: 20%;
+    input {
+      height: 44px;
+      width: 80%;
+      border-radius: 5px;
+    }
+	form {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+    button {
+      height: 44px;
+	  width: 44px;
+      border-radius: 5px;
+	  margin-left: auto;
+    }
+	.search {
+		margin: 0;
+	}
+  }
+
+.galleryFlex {
+	figure{flex-basis: 33.3%}
+}
+
+.testimonial {
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto;
+	grid-template-areas: 
+		"one one"
+		"two three";
+}
+
+.article {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 20px $gutter;
+}
+
+iframe {
+	height: 450px
+}
+
+.about {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas:
+		"one div two"
+		"three div null";
+	.divider {
+		display: inline;
+		grid-area: div;		
+	}
+	.divider, .divider2 {
+		background-color: #A7A7A7;
+		width: 1px;
+	}
+	.divider2 {display: none;}
+	.section1 {grid-area: one;}
+	.section1 {grid-area: two;}
+	.section1 {grid-area: three;}
+	color: black;
+	hr {display: none;}
+}
+// -----------------------------------------------------
+
+//.navWrapper {
+//  max-width: 1200px;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "one two three"
+    "four null null";
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+
+/* ------------- HEADER ------------- */
+header {
+  height: 130px;
+  h3 a {
+    padding-top: 50px;
+    text-decoration: none;
+    color: $fontColor;
+  }
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "one two"
+    "three three"
+    "four four"
+    "five five";
+
+  .contact {
+    grid-area: one;
+  }
+  .news {
+    grid-area: two;
+    padding-right: 10px;
+  }
+  .why {
+    grid-area: three;
+  }
+  .social {
+    grid-area: four;
+  }
+  .developer {
+    grid-area: five;
+  }
+}
+
+//.navi {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//}
+
+// ---------------- Cruises -----------------
+.cruiseContainers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 50px;
+
+  .cruisePhoto {
+    width: 30%;
+    height: auto;
+    padding-right: 20px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 10%;
+      align-self: flex-end;
+    }
+  }
+}
+
+// ---------------- AGENTS -----------------
+
+.agentDetails {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "one two"
+    "three three";
+
+  .agentPhoto {
+    grid-area: two;
+  }
+
+  .details {
+    grid-area: one;
+  }
+}
+
+
+/*  ------------- NAGIVATION -------------  */
+
+.myslider {
+	z-index: 0;
+}
+
+//nav {
+//	// position: relative;
+//	ul.closed {max-height: 25rem;}
+//
+//	button {display: none;}
+//
+//	ul {
+//		margin-left: 2%;
+//	}
+//
+//	ul li.active a {background-color: $primaryColor;}
+//
+//	ul li a {
+//		border: none;
+//		border-right: 1px solid rgba(182, 182, 182, 0.2);
+//		padding: .7rem .9rem;
+//		transition: background 0.3s linear;
+//		-webkit-transition: background 0.3s linear;
+//		
+//		&:hover {background-color: darken($menuColor, 10%);}
+//	}
+//	
+//	ul li {float: left;}
+//	
+//	form {
+//		height: 44px;
+//		width: 100%;
+//	}
+//
+//	ul li ul {
+//		visibility: hidden;
+//		opacity: 0;
+//		position: absolute;
+//		transition: all 0.5s ease;
+//		left: 72px;
+//		display: none;
+//		background-color: $menuColor;
+//	}
+//	
+//	ul li:focus-within > ul,
+//	ul li ul:focus{
+//		visibility: visible;
+//		opacity: 1;
+//		display: block;
+//		
+//
+//		ul {
+//			visibility: visible;
+//		}
+//	}
+//	
+//	ul li ul li {
+//		clear: both;
+//		width: 100%;
+//		z-index: 10;
+//	}
+//}

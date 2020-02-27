@@ -1,0 +1,116 @@
+[14-Feb-2020 23:06:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_posts() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:1
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 1
+[14-Feb-2020 23:06:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_posts() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:1
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 1
+[14-Feb-2020 23:06:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_posts() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:1
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 1
+[14-Feb-2020 23:06:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_posts() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:3
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 3
+[14-Feb-2020 23:09:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:1
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 1
+[14-Feb-2020 23:10:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:1
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 1
+[14-Feb-2020 23:10:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:1
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 1
+[14-Feb-2020 23:14:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/functions.php:3
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/functions.php on line 3
+[14-Feb-2020 23:16:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/functions.php:3
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/functions.php on line 3
+[14-Feb-2020 23:16:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/functions.php:3
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/functions.php on line 3
+[14-Feb-2020 23:18:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_nav_menu() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:9
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 9
+[14-Feb-2020 23:19:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_nav_menu() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:9
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 9
+[14-Feb-2020 23:20:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:00:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:00:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:04:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:15:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:16:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:17:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:18:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:24:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:25:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:44:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 00:45:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 01:08:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[15-Feb-2020 01:34:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[24-Feb-2020 13:24:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/header.php on line 5
+[24-Feb-2020 13:26:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php:1
+Stack trace:
+#0 {main}
+  thrown in /home2/coyatesb/public_html/3740wp/wp-content/themes/constructionTheme/page.php on line 1
