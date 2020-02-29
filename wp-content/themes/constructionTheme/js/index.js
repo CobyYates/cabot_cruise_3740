@@ -45,6 +45,11 @@
 //var x = document.getElementById('hamburgerBtn');
 //x.onclick = toggleMenu;
 
+/*jslint browser:true */
+"use strict";
+
+//Create a button and give it an ID of "hamburgerBtn"
+//Attach an ID of "primaryNav" to the UL of the unordered list that holds the links
 function toggleMenu() {
     document.getElementById("hamburgerBtn").classList.toggle("open");
     document.getElementById("menu-main-menu").classList.toggle("open");
@@ -56,3 +61,15 @@ x.onclick = toggleMenu;
 $(window).load( function() {
      $('#nav > ul:first-child > li > a').removeAttr('href');
 });
+
+//function toggleMenu() {
+//    document.getElementById("hamburgerBtn").classList.toggle("open");
+//    document.getElementById("menu-main-menu").classList.toggle("open");
+//}
+//var x = document.getElementById('hamburgerBtn');
+//x.onclick = toggleMenu;
+//
+////try this for parent link removed
+//$(window).load( function() {
+//     $('#nav > ul:first-child > li > a').removeAttr('href');
+//});

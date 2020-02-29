@@ -1,9 +1,3 @@
-/* ------------- NAVIGATION ------------- */
-
-.hamburgerOpen,
-.hamburgerClose {
-  display: none;
-}
 
 header {
   .headerContent {
@@ -19,17 +13,14 @@ header {
   }
 }
 
-.menu-main-menu-container {
-	width: 75%;
-	ul {
-		margin-left: 0;
-		border: none;
-	}
-}
+nav .searchy {display: block;}
+nav .searchy1 {display: none;}
 
 .search-container {
+	margin-left: auto;
+	display: inline-block;
 	height: 44px;
-    width: 20%;
+    width: 50%;
     input {
       height: 44px;
       width: 80%;
@@ -98,11 +89,6 @@ iframe {
 }
 // -----------------------------------------------------
 
-//.navWrapper {
-//  max-width: 1200px;
-//  margin-left: auto;
-//  margin-right: auto;
-//}
 
 .gallery {
   display: grid;
@@ -167,12 +153,6 @@ header {
   }
 }
 
-//.navi {
-//  display: flex;
-//  justify-content: space-between;
-//  align-items: center;
-//}
-
 // ---------------- Cruises -----------------
 .cruiseContainers {
   display: flex;
@@ -215,68 +195,3 @@ header {
     grid-area: one;
   }
 }
-
-
-/*  ------------- NAGIVATION -------------  */
-
-.myslider {
-	z-index: 0;
-}
-
-//nav {
-//	// position: relative;
-//	ul.closed {max-height: 25rem;}
-//
-//	button {display: none;}
-//
-//	ul {
-//		margin-left: 2%;
-//	}
-//
-//	ul li.active a {background-color: $primaryColor;}
-//
-//	ul li a {
-//		border: none;
-//		border-right: 1px solid rgba(182, 182, 182, 0.2);
-//		padding: .7rem .9rem;
-//		transition: background 0.3s linear;
-//		-webkit-transition: background 0.3s linear;
-//		
-//		&:hover {background-color: darken($menuColor, 10%);}
-//	}
-//	
-//	ul li {float: left;}
-//	
-//	form {
-//		height: 44px;
-//		width: 100%;
-//	}
-//
-//	ul li ul {
-//		visibility: hidden;
-//		opacity: 0;
-//		position: absolute;
-//		transition: all 0.5s ease;
-//		left: 72px;
-//		display: none;
-//		background-color: $menuColor;
-//	}
-//	
-//	ul li:focus-within > ul,
-//	ul li ul:focus{
-//		visibility: visible;
-//		opacity: 1;
-//		display: block;
-//		
-//
-//		ul {
-//			visibility: visible;
-//		}
-//	}
-//	
-//	ul li ul li {
-//		clear: both;
-//		width: 100%;
-//		z-index: 10;
-//	}
-//}

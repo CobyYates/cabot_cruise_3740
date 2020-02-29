@@ -13,13 +13,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	  <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
-	<script>
-		grecaptcha.ready(function() {
-    	grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
-       	...
-		})
-		})
-</script>
+	
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -52,17 +46,27 @@
       </div>
       <title>Cabot Cruises | <?php echo $title; ?></title>
     </header>
+	<div id="navWrapper">
+		<nav class="clearfix">
+			<div class="navi">
+				<button id="hamburgerBtn">&#9776</button>
+				<div class="search-container searchy">
+				  <form action="" method="get">
+					<input type="search" placeholder="Search.." class="search" name="s">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				  </form>
+				</div>		
+				<?php wp_nav_menu()?>				
+			</div>
+			<div class="search-container searchy1">
+			  <form action="" method="get">
+				<input type="search" placeholder="Search.." class="search" name="s">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			  </form>
+			</div>						
+		</nav>    
+	</div>
 	
-	<nav class="clearfix" class="navi">		
-	<button id="hamburgerBtn">&#9776</button>
-		<div class="search-container">
-          <form action="" method="get">
-			<input type="search" placeholder="Search.." class="search" name="s">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-		<?php wp_nav_menu()?>
-	</nav>    
 <!--
     <nav>
       <section class="navContainer">

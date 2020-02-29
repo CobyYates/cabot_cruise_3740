@@ -95,211 +95,64 @@ main {
     }
 }
 
-/*  ------------- NAV -------------  */
-  /* Giving a background-color to the nav container. */
-.menu-main-menu-container {
-	height: 44px;
+div#navWrapper {
+    background-color: $primaryColor; 
 }
 
   nav {
-    margin: 0;
-    padding: 0;
-    background-color: #264670; }
+    position: relative; }
+//    nav button {
+//      display: none; }
     nav #hamburgerBtn {
-//      display: none; 
+      display: none; }
+    nav #menu-main-menu {
+      height: auto; }
+    nav ul {
+      display: block; }
+    nav ul.open {
+      display: block; }
+    nav ul li a span {
+      display: inline; }
+    nav ul li {
+      float: left; }
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba 0, 0, 0, 0.2;
+      padding: .7rem .9rem;
+      transition: background 0.3s linear;
+      -webkit-transition: background 0.3s linear; }
+    nav ul li a:hover {
+      background-color: #031012; }
+    nav ul li ul {
+      left: -999em;
+      z-index: 99;
+      background-color: $primaryColor;
+      position: absolute;
+      width: 10rem; }
+    nav .current-menu-item {
+      background-color: #178497; }
+    nav .current_page_parent {
+      background-color: #137081; }
+    nav ul li:hover ul {
+      left: auto; }
+    nav ul li ul li {
+      float: none;
+      border-bottom: 1px soild rgba(0, 0, 0, 0.2); }
+    nav h4 {
+      height: 25px;
+      padding-top: .2rem; }
+    nav h7, nav input {
+      height: 25px; }
+    nav input.searchField {
+      height: 25px;
+      width: 20%; }
+    nav input.sbtn {
+      height: 25px;
+      width: 25px; }
+
+
+
+.search-container {
+	width: 25%;
+	margin-right: 5px;
 }
-    .menu-main-menu {
-      height: 44px;
-      display: inline-block; }
-
-  /* Since we'll have the "ul li" "float:left"
-   * we need to add a clear after the container. */
-  nav:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-  /* Removing padding, margin and "list-style" from the "ul",
-   * and adding "position:reltive" */
-  nav ul {
-    float: left;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative; }
-
-  /* Positioning the navigation items inline */
-  nav ul li {
-    margin: 0px;
-    display: inline-block;
-    float: left;
-    background-color: #264670; }
-
-  /* Styling the links */
-  nav a {
-    display: block;
-    padding: 14px 20px;
-    color: #fff;
-    font-size: 17px;
-    text-decoration: none; }
-
-  nav ul li ul li:hover {
-    background: #000000; }
-
-  /* Background color change on Hover */
-  nav a:hover {
-    background-color: #000000; }
-
-  /* Hide Dropdowns by Default
-   * and giving it a position of absolute */
-  nav ul ul {
-    display: none;
-    position: absolute;
-    top: 60px; }
-
-  /* Display Dropdowns on Hover */
-  nav ul li:hover > ul {
-    display: inherit;
-    z-index: 10; }
-
-  /* Fisrt Tier Dropdown */
-  nav ul ul li {
-    width: 170px;
-    float: none;
-    display: list-item;
-    position: relative; }
-
-  .active {
-    background-color: #212121; }
-
-  .parent {
-    background-color: #212121; }
-
-
-/*  ------------- NAV -------------  */
-//nav {
-//	ul {
-//		border-left: 1px solid rgba(0,0,0,0.3);
-//		height: 150px;
-//		background: rgba(0, 0, 0, 0)
-//	}
-//	ul li {
-//		width: auto;
-//		position: relative;
-//	}// end li
-//	ul li:last-child {border-right: 1px solid rgba(0,0,0,0.3);}
-//	ul li a {
-//		padding: .5rem 1rem;
-//	} // and a
-//
-//	ul li ul {
-//		position: absolute;
-//		display: inline-block;
-//		left: 0;
-//		top: 100%;
-//		// padding: 10px 20px;
-//		z-index: 999;
-//		// &:hover {display: block;}
-//	}
-//
-//	.dropdown {
-//	}
-//} // end nav
-
-
-
-///* Giving a background-color to the nav container. */
-//nav {
-//  margin: 0;
-//  padding: 0;
-//  background-color: $primaryColor;
-//	#hamburgerBtn {
-//		display: none;
-//	}
-//	
-//	.menu-main-menu{
-//		height: 44px;
-//		display: inline-block;
-//	}	
-//}
-//
-///* Since we'll have the "ul li" "float:left"
-// * we need to add a clear after the container. */
-//
-//nav:after {
-//  content: "";
-//  display: table;
-//  clear: both;
-//}
-//
-///* Removing padding, margin and "list-style" from the "ul",
-// * and adding "position:reltive" */
-//nav ul {
-//  float: left;
-//  padding: 0;
-//  margin: 0;
-//  list-style: none;
-//  position: relative;
-//}
-//
-///* Positioning the navigation items inline */
-//nav ul li {
-//  margin: 0px;
-//  display: inline-block;
-//  float: left;
-//  background-color: $primaryColor;
-//}
-//
-///* Styling the links */
-//nav a {
-//  display: block;
-//  padding: 14px 20px;
-//  color: #fff;
-//  font-size: 17px;
-//  text-decoration: none;
-//}
-//
-//nav ul li ul li:hover {
-//  background: #000000;
-//}
-//
-///* Background color change on Hover */
-//nav a:hover {
-//  background-color: #000000;
-//}
-//
-///* Hide Dropdowns by Default
-// * and giving it a position of absolute */
-//nav ul ul {
-//  display: none;
-//  position: absolute;
-//  top: 60px;
-//}
-//
-///* Display Dropdowns on Hover */
-//nav ul li:hover > ul {
-//  display: inherit;
-//  z-index: 10;
-//}
-//
-///* Fisrt Tier Dropdown */
-//nav ul ul li {
-//  width: 170px;
-//  float: none;
-//  display: list-item;
-//  position: relative;
-//}
-//
-//.active {
-//  background-color: #212121;
-//}
-//
-//.parent {
-//  background-color: #212121;
-//}
-//
-.wrapper {
-	max-width: 75rem;
-	margin: 0 auto;
-}
-

@@ -173,44 +173,16 @@ nav a {
   font-size: 17px;
   text-decoration: none; }
 
-nav ul li ul li:hover {
-  background: #000000; }
-
 /* Background color change on Hover */
 nav a:hover {
   background-color: #000000; }
 
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 60px; }
-
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-  display: inherit;
-  z-index: 10; }
-
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-  width: 170px;
-  float: none;
-  display: list-item;
-  position: relative; }
 
 .active, .current-menu-item, .current_page_parent {
   background-color: #212121; }
 
 .parent {
   background-color: #212121; }
-
-/* Change ' +' in order to change the Dropdown symbol */
-li > a:after {
-  content: " +"; }
-
-li > a:only-child:after {
-  content: ""; }
 
 /* Media Queries
 --------------------------------------------- */
@@ -253,46 +225,64 @@ li > a:only-child:after {
     display: block;
     width: 100%; }
 
+/*
   nav ul ul .toggle,
   nav ul ul a {
     padding: 0 40px; }
+*/
 
+/*
   nav ul ul ul a {
     padding: 0 80px; }
+*/
 
+/*
   nav a:hover,
   nav ul ul ul a {
     background-color: #000000; }
+*/
 
+/*
   nav ul li ul li .toggle,
   nav ul ul a,
   nav ul ul ul a {
     padding: 14px 20px;
     color: #fff;
     font-size: 17px; }
+*/
 
+/*
   nav ul li ul li .toggle,
   nav ul ul a {
     background-color: #212121; }
+*/
 
   /* Hide Dropdowns by Default */
+/*
   nav ul ul {
     float: none;
     position: static;
     color: #ffffff; }
+*/
 
   /* Hide menus on hover */
+/*
   nav ul ul li:hover > ul,
   nav ul li:hover > ul {
     display: none; }
+*/
 
   /* Fisrt Tier Dropdown */
+/*
   nav ul ul li {
     display: block;
     width: 100%; }
+*/
+/*
 
   nav ul ul ul li {
     position: static; } }
+*/
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
